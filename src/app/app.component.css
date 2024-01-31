@@ -1,0 +1,38 @@
+.back{
+  background-color: #4B515D;
+  background-image: url(/assets/xobg.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.back1{
+  background-color:transparent;
+  background-size: cover;
+  padding: 0px 10px 0px 10px;
+}
+
+  
+  .col {
+    width: 120px;
+    height: 120px;
+    border: 1px solid #ccc;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 100px;
+    cursor: pointer;
+  }
+  
+  .current-player {
+    margin-top: 10px;
+  }
+  .winner-alert {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #4caf50;
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 100px;
+  }  

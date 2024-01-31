@@ -1,0 +1,36 @@
+<section class="vh-100 back  " >
+  <div class="container shadow rounded">
+     <h1 class="display-1 text-center px-5">xo</h1>
+  </div>
+
+  <div class="container">
+    <div class="container py-4">
+        <div class="row height d-flex justify-content-center">
+            <div class="col-4">
+  <div class="current-player">
+    <p *ngIf="!winner" class="display-6">Current Player: {{ currentPlayer }}</p>
+    <p *ngIf="winner === 'Tie'" class="display-6">It's a Tie!</p>
+    <p *ngIf="winner && winner !== 'Tie'" class="display-6">Winner: {{ winner }}</p>
+  </div>
+</div>
+</div>
+</div>
+</div>
+
+
+  <div class="row d-flex justify-content-center align-items-center">
+    <div class="col-md-8 col-lg-6 col-xl-4">
+  <div class="card back1 shadow ">
+  <div class="row" *ngFor="let row of board; let i = index">
+    <div class="col" *ngFor="let cell of row; let j = index" (click)="makeMove(i, j)">
+      {{ cell }}
+    </div>
+  </div>
+  
+</div>
+</div>
+</div>
+</section>
+
+
+<router-outlet></router-outlet>
